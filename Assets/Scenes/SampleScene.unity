@@ -1448,8 +1448,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.94
-  m_Center: {x: -1.56, y: 0, z: 0}
+  m_Radius: 2.711237
+  m_Center: {x: -0.38593018, y: 0, z: -0.057473317}
 --- !u!114 &989985199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1462,7 +1462,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cdccd6035f46034d8767e19edd590a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attractionSpeed: 10
+  <attractionSpeed>k__BackingField: 5
   casePos:
   - {fileID: 893916798}
   - {fileID: 2056275404}
@@ -2181,7 +2181,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &2010502275
