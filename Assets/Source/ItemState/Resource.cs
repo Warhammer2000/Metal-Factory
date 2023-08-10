@@ -4,9 +4,5 @@ using UnityEngine;
 
 public class Resource : MonoBehaviour
 {
-    public Rigidbody rb; 
-    private void Start()
-    {
-        rb = GetComponent<Rigidbody>();
-    }
+    public Rigidbody rb;
 }
