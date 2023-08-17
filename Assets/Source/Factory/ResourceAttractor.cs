@@ -10,7 +10,7 @@ public class ResourceAttractor : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         Resource resource = other.GetComponent<Resource>();
-        int randomIndex = Random.Range(0, casePos.Length);  
+        int randomIndex = Random.Range(0, casePos.Length);
         if (resource != null)
         {
             Vector3.MoveTowards(other.transform.position, casePos[randomIndex].position, attractionSpeed);

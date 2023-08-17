@@ -9,6 +9,7 @@ namespace Industry
     {
         [field: SerializeField] public float moveSpeed { get; private set; }
         [field: SerializeField] public float accelerationSpeed { get; private set; }
+
         private void OnValidate()
         {
             if (moveSpeed < 0) moveSpeed = 0;

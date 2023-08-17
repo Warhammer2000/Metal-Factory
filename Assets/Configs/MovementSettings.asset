@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7c5c160dda08744c8a3488826aba028, type: 3}
   m_Name: MovementSettings
   m_EditorClassIdentifier: 
-  <moveSpeed>k__BackingField: 120
-  <accelerationSpeed>k__BackingField: 220
+  <moveSpeed>k__BackingField: 10
+  <accelerationSpeed>k__BackingField: 18.333334
