@@ -6,7 +6,7 @@ using UnityEngine;
 public class Factory : MonoBehaviour
 {
     public Inventory Inventory { get; private set; }
-
+    public bool isDuralFactory;
     private void Awake()
     {
         Inventory = GetComponent<Inventory>();
