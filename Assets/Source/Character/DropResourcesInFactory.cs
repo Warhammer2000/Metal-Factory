@@ -28,7 +28,14 @@ public class DropResourcesInFactory : MonoBehaviour
                     }
                     inventory.Clear();
                 }
-                
+                if(factory.isDuralFactory)
+                {
+                    foreach (var resource in inventory.Resources)
+                    {
+                        factory.Inventory.AddResource(resource);
+                    }
+                    inventory.Clear();
+                }
             }
         } 
     }

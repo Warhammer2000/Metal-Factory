@@ -1204,6 +1204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 164e6a1322237a44f9e84b9556c3ab2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDuralFactory: 0
 --- !u!114 &495992836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3196,6 +3197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 164e6a1322237a44f9e84b9556c3ab2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDuralFactory: 1
 --- !u!1 &1933667834
 GameObject:
   m_ObjectHideFlags: 0
