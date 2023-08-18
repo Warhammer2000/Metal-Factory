@@ -12,17 +12,33 @@ public class DropResourcesInFactory : MonoBehaviour
         inventory = GetComponent<Inventory>();
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         var factory = other.GetComponentInParent<Factory>();
 
-        if (factory != null)
+        if (Input.GetKey(KeyCode.R))
         {
-            foreach (var r in inventory.Resources)
+            if (factory != null)
             {
-                factory.Inventory.AddResource(r);
+                if (ChekingResourcesType())
+                {
+                    foreach (var resource in inventory.Resources)
+                    {
+                        factory.Inventory.AddResource(resource);
+                    }
+                    inventory.Clear();
+                }
+                
             }
-            inventory.Clear();
+        } 
+    }
+    private bool ChekingResourcesType()
+    {
+        for(int i = 0; i < inventory.resources.Count; i++)
+        {
+            if (inventory.resources[i].Type == ResourceType.Iron)
+            return true;
         }
+        return false;
     }
 }
