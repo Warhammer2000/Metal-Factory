@@ -3327,8 +3327,8 @@ MonoBehaviour:
   resourcePrefab: {fileID: 7295346359250159399, guid: 5a07c8fb43fe8fb43bc63b6cf1c94540, type: 3}
   parentObject: {fileID: 1933667835}
   spawnPlatform: []
-  generationInterval: 0.5
-  maxResourcesOnPlatform: 16
+  generationInterval: 0.19
+  maxResourcesOnPlatform: 63
   isStarterFactory: 1
 --- !u!1 &1940988770
 GameObject:
