@@ -41,11 +41,11 @@ public class InventoryUI : MonoBehaviour
         {
             if (kvp.Key == ResourceType.Iron)
             {
-                NeedIron.text = kvp.Value.ToString();
+                NeedIron.text = $"{kvp.Value} / {kvp.Value}";
             }
             if (kvp.Key == ResourceType.Copper)
             {
-                NeedCoprum.text = kvp.Value.ToString();
+                NeedCoprum.text = $"{kvp.Value} / {kvp.Value}"; 
             }
             // Добавьте условия для других типов ресурсов по аналогии
         }
