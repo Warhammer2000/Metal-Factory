@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 [RequireComponent(typeof(Inventory))]
@@ -20,21 +21,21 @@ public class DropResourcesInFactory : MonoBehaviour
         {
             if (factory != null)
             {
-                if (ChekingResourcesType())
+                if (factory.isCopperFactory == true && ChekingResourcesType())
                 {
-                    foreach (var resource in inventory.Resources)
-                    {
-                        factory.Inventory.AddResource(resource);
-                    }
-                    inventory.Clear();
+                         foreach (var resource in inventory.Resources)
+                        {
+                            factory.Inventory.AddResource(resource);
+                        }
+                        inventory.Clear();
                 }
-                if(factory.isDuralFactory)
+                if (factory.isDuralFactory)
                 {
-                    foreach (var resource in inventory.Resources)
-                    {
-                        factory.Inventory.AddResource(resource);
-                    }
-                    inventory.Clear();
+                        foreach (var resource in inventory.Resources)
+                        {
+                            factory.Inventory.AddResource(resource);
+                        }
+                        inventory.Clear();
                 }
             }
         } 

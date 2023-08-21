@@ -8,16 +8,20 @@ public enum ResourceType
     Copper, Iron, Dural
 }
 
+
+
+
 public class Resource : MonoBehaviour
 {
-    [SerializeField] ResourceData data;
-
+    [SerializeField] private ResourceData data;
+   
+    [field : SerializeField] public bool isIron { get; set; }
+    private void Awake()
+    {
+        Destroy(gameObject, 8f);
+    }
     public ResourceData Data => data;
 
 }
 
-[Serializable]
-public struct ResourceData
-{
-    public ResourceType Type;
-}
+

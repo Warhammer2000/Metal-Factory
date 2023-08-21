@@ -22,5 +22,6 @@ public class PickUpHandler : MonoBehaviour
     private void OnPickUpHandler(ResourceData resource)
     {
         inventory.AddResource(resource);
+
     }
 }

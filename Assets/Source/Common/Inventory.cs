@@ -1,55 +1,89 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
-using Zenject;
 
 public class Inventory : MonoBehaviour
 {
     public List<ResourceData> resources;
-    private ResourceFactory _resfactory;
-    private Factory _factory;
+
+    public List<ResourceData> resourceDural;
+
     public IReadOnlyList<ResourceData> Resources => resources.AsReadOnly();
     public int InventoryItemsCount => resources.Count;
 
-    public bool isFactory;
     private void Awake()
     {
-        _factory = GetComponent<Factory>();
         resources = new List<ResourceData>(32);
-        if(isFactory == true) _resfactory = GetComponent<ResourceFactory>();
     }
-    private void FixedUpdate()
+
+    public void AddResource(ResourceData data)
     {
-        if (isFactory == true) CheckItems();
-    }
-    public void CheckItems()
-    {
-        if (resources.Count >= 10)
+        resources.Add(data);
+
+        resourceDural.Add(data);
+
+        for (int i = 0; i < resourceDural.Count; i++)
         {
-            if(_factory.isDuralFactory == true)
+            if (resourceDural[i].Type == ResourceType.Copper || resourceDural[i].Type == ResourceType.Iron)
             {
-                if (CheckingResources())
-                {
-                    Debug.Log("Uspex");
-                    _resfactory.GenerateResources();
-                }
-                else Debug.Log("ne Uspex");
+                resourceDural.RemoveAt(i);
             }
-            else _resfactory.GenerateResources();
         }
-    }
-    private bool CheckingResources()
-    {
         for(int i = 0; i < resources.Count; i++)
         {
-            if (resources[i].Type == ResourceType.Iron && resources[i].Type == ResourceType.Copper)
-            Debug.Log(resources[i].Type == ResourceType.Iron && resources[i].Type == ResourceType.Copper);
-            return true;
+            if (resources[i].Type == ResourceType.Dural)
+            {
+                resources.RemoveAt(i);  
+            }
         }
-        return false;
     }
-    public void AddResource(ResourceData data) => resources.Add(data);
     public void RemoveResource(ResourceData data) => resources.Remove(data);
     public void Clear() => resources.Clear();
 }
+//public void CheckItems()
+//{
+//    if (resources.Count >= 10)
+//    {
+//        if (_factory.isDuralFactory == true)
+//        {
+//            if (CheckingResources())
+//            {
+//                Debug.Log("Uspex");
+//                Dictionary<ResourceType, int> resourceCounts = new Dictionary<ResourceType, int>();
+//                for (int i = 0; i < resources.Count; i++)
+//                {
+//                    ResourceType type = resources[i].Type;
+//                    if (!resourceCounts.ContainsKey(type))
+//                    {
+//                        resourceCounts[type] = 0;
+//                    }
+//                    Debug.Log("Uspex0");
+//                    resourceCounts[type]++;
+//                }
+//                bool hasIron = resourceCounts.ContainsKey(ResourceType.Iron);
+//                bool hasCopper = resourceCounts.ContainsKey(ResourceType.Copper);
+//                if (hasIron && hasCopper)
+//                {
+//                    _resfactory.GenerateResources(resources.Count);
+//                }
+
+
+
+//            }
+//            else Debug.Log("ne Uspex");
+//        }
+//        else _resfactory.GenerateResources(resources.Count);
+//    }
+//}
+//private bool CheckingResources()
+//{
+//    for(int i = 0; i < resources.Count; i++)
+//    {
+//        if (resources[i].Type == ResourceType.Iron && resources[i].Type == ResourceType.Copper)
+//        Debug.Log(resources[i].Type == ResourceType.Iron && resources[i].Type == ResourceType.Copper);
+//        return true;
+//    }
+//    return false;
+//}

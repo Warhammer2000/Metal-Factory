@@ -1,70 +1,95 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using System.Net.Http.Headers;
 using UnityEngine;
 using UnityEngine.UI;
+using Zenject.SpaceFighter;
 
 [RequireComponent(typeof(Inventory))]
 public class InventoryUI : MonoBehaviour
 {
     private Inventory inventory;
+
     [SerializeField] private Text NeedIron;
     [SerializeField] private Text NeedCoprum;
-    private int ironCount = 0;
-    private int copperCount = 0;
-    public bool isCuprumFactory;
+    [SerializeField] private Text NeedDural;
+    
+  
     private void Awake()
     {
-        inventory = GetComponent<Inventory>();  
+        inventory = GetComponent<Inventory>();
+        IntializeText();
+    }
+    private void IntializeText()
+    {
+       NeedIron.text = "Железа : ";
+       NeedCoprum.text = "Меди : ";
+       NeedDural.text = "Алюминия : ";
     }
 
-    // Update is called once per frame
-    private void FixedUpdate()
+    private void Update()
     {
-        Information();
+        GetIron();
     }
-    public void Information()
+  
+    private void GetIron()
     {
-        Dictionary<ResourceType, int> resourceCounts = new Dictionary<ResourceType, int>();
-
+        int ironCount = 0;
+        int CopperCount = 0;
+        int DuralCount = 0;
         for (int i = 0; i < inventory.resources.Count; i++)
         {
-            ResourceType type = inventory.resources[i].Type;
-            if (!resourceCounts.ContainsKey(type))
+            if (inventory.resources[i].Type == ResourceType.Iron)
             {
-                resourceCounts[type] = 0;
+                ironCount += inventory.resources[i].Amount;
             }
-            resourceCounts[type]++;
+            if (inventory.resources[i].Type == ResourceType.Copper)
+            {
+                CopperCount += inventory.resources[i].Amount;
+            }
         }
-
-        // Обновляем текстовые поля на основе сохраненных значений в словаре
-        foreach (var kvp in resourceCounts)
+        for(int i = 0; i < inventory.resourceDural.Count; i++)
         {
-            if (kvp.Key == ResourceType.Iron)
+            if (inventory.resourceDural[i].Type == ResourceType.Dural)
             {
-                NeedIron.text = $"{kvp.Value} / {kvp.Value}";
+                DuralCount += inventory.resourceDural[i].Amount;
             }
-            if (kvp.Key == ResourceType.Copper)
-            {
-                NeedCoprum.text = $"{kvp.Value} / {kvp.Value}"; 
-            }
-            // Добавьте условия для других типов ресурсов по аналогии
         }
-       
+        NeedIron.text = $"Железа : {ironCount} / {ironCount}";
+        NeedCoprum.text = $"Меди :{CopperCount} / {CopperCount}";
+        NeedDural.text = $"Алюминия :{DuralCount} / {DuralCount}";
+
     }
 }
-//for(int i = 0; i < inventory.resources.Count; i++)
+//private void Dataoutput()
 //{
-//    if(inventory.resources[i].Type == ResourceType.Iron)
+//    Dictionary<ResourceType, int> resourceCounts = new Dictionary<ResourceType, int>();
+
+//    for (int i = 0; i < inventory.resources.Count; i++)
 //    {
-//        ironCount++;
+//        ResourceType type = inventory.resources[i].Type;
+//        if (!resourceCounts.ContainsKey(type))
+//        {
+//            resourceCounts[type] = 0;
+//        }
+//        resourceCounts[type]++;
 //    }
-//    if (inventory.resources[i].Type == ResourceType.Copper)
+//    foreach (var kvp in resourceCounts)
 //    {
-//        copperCount++;
+//        if (kvp.Key == ResourceType.Iron)
+//        {
+
+//        }
+//        if (kvp.Key == ResourceType.Copper)
+//        {
+
+
+//        }
+//        if (kvp.Key == ResourceType.Dural)
+//        {
+
+
+//        }
 //    }
-//}
-//NeedIron.text = ironCount.ToString();
-//if (!isCuprumFactory)
-//{
-//    NeedCoprum.text = copperCount.ToString();
 //}

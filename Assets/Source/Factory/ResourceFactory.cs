@@ -10,7 +10,8 @@ public class ResourceFactory : MonoBehaviour
     public float generationInterval = 5f; 
     public int maxResourcesOnPlatform = 10;
 
-   
+    private float timer = 0f;
+
     private Vector3 platformMinPoint;
     private Vector3 platformMaxPoint;
 
@@ -21,15 +22,32 @@ public class ResourceFactory : MonoBehaviour
     private void Start()
     {
         spawnPlatform = parentObject.GetComponentsInChildren<Transform>();
-        if (isStarterFactory == true) InvokeRepeating("GenerateResources", 1.5f, generationInterval);
+        //if (isStarterFactory == true) InvokeRepeating("GenerateResources", 1.5f, generationInterval);
     }
-
-    public void GenerateResources()
+    private void Update()
     {
-        if (currentResourcesOnPlatform >= maxResourcesOnPlatform)
+        timer += Time.deltaTime;
+
+        if (timer >= generationInterval)
         {
-            return; // Достигнуто максимальное количество ресурсов на платформе
+            GenerateResources(0); 
+            timer = 0f; 
         }
+    }
+    public void GenerateResources(int amount)
+    {
+        if(isStarterFactory == true)
+        {
+            if (currentResourcesOnPlatform >= maxResourcesOnPlatform) return;
+        }
+        else
+        {
+            if (currentResourcesOnPlatform >= amount)
+            {
+                return;
+            }
+        }
+      
         int randomindex = Random.Range(0, spawnPlatform.Length);
 
         Instantiate(resourcePrefab, spawnPlatform[randomindex].position, Quaternion.identity);

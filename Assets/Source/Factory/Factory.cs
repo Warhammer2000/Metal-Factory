@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Inventory))]
+[RequireComponent(typeof(FactoryInventory))]
 public class Factory : MonoBehaviour
 {
-    public Inventory Inventory { get; private set; }
+    public FactoryInventory Inventory { get; private set; }
+    public bool isCopperFactory;
     public bool isDuralFactory;
     private void Awake()
     {
-        Inventory = GetComponent<Inventory>();
+        Inventory = GetComponent<FactoryInventory>();
     }
 }
