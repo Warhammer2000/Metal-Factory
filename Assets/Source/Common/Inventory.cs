@@ -11,7 +11,7 @@ public class Inventory : MonoBehaviour
     public List<ResourceData> resourceDural;
 
     public IReadOnlyList<ResourceData> Resources => resources.AsReadOnly();
-    public int InventoryItemsCount => resources.Count;
+    private  int InventoryItemsCount => resources.Count;
 
     private void Awake()
     {

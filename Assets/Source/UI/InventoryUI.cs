@@ -62,34 +62,3 @@ public class InventoryUI : MonoBehaviour
 
     }
 }
-//private void Dataoutput()
-//{
-//    Dictionary<ResourceType, int> resourceCounts = new Dictionary<ResourceType, int>();
-
-//    for (int i = 0; i < inventory.resources.Count; i++)
-//    {
-//        ResourceType type = inventory.resources[i].Type;
-//        if (!resourceCounts.ContainsKey(type))
-//        {
-//            resourceCounts[type] = 0;
-//        }
-//        resourceCounts[type]++;
-//    }
-//    foreach (var kvp in resourceCounts)
-//    {
-//        if (kvp.Key == ResourceType.Iron)
-//        {
-
-//        }
-//        if (kvp.Key == ResourceType.Copper)
-//        {
-
-
-//        }
-//        if (kvp.Key == ResourceType.Dural)
-//        {
-
-
-//        }
-//    }
-//}

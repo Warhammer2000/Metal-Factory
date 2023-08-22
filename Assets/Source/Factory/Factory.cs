@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(FactoryInventory))]
 public class Factory : MonoBehaviour
 {
-    public FactoryInventory Inventory { get; private set; }
+    public FactoryInventory Inventory { get; set; }
     public bool isCopperFactory;
     public bool isDuralFactory;
     private void Awake()

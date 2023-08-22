@@ -1,17 +1,20 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using Zenject;
 
 public class FactoryInventory : MonoBehaviour
 {
-    public List<ResourceData> resources;
-
+    public List<ResourceData> resources { get;  set; }
     private ResourceFactory _resfactory;
     private Factory _factory; 
-    public IReadOnlyList<ResourceData> Resources => resources.AsReadOnly();
-    public int InventoryItemsCount => resources.Count;
+    private IReadOnlyList<ResourceData> Resources => resources.AsReadOnly();
+    private int InventoryItemsCount => resources.Count;
 
+    
     private void Awake()
     {
         _factory = GetComponent<Factory>();
@@ -47,7 +50,7 @@ public class FactoryInventory : MonoBehaviour
                     if (!hasDural && hasIron && hasCopper)
                     {
                         Debug.Log("Производство");
-                        _resfactory.GenerateResources(resources.Count);
+                        ProduceDural(_factory);
                         return;
                     }
                 }
@@ -57,13 +60,43 @@ public class FactoryInventory : MonoBehaviour
     }
     private bool CheckingResources()
     {
-        for(int i = 0; i < resources.Count; i++)
+        for (int i = 0; i < resources.Count; i++)
         {
             if (resources[i].Type == ResourceType.Iron && resources[i].Type == ResourceType.Copper)
             Debug.Log(resources[i].Type == ResourceType.Iron && resources[i].Type == ResourceType.Copper);
             return true;
         }
         return false;
+    }
+    private void ProduceDural(Factory factory)
+    {
+        int ironCount = 0;
+        int copperCount = 0;
+
+        foreach (var resource in resources)
+        {
+            if (resource.Type == ResourceType.Iron)
+            {
+                ironCount++;
+            }
+            else if (resource.Type == ResourceType.Copper)
+            {
+                copperCount++;
+            }
+        }
+
+        if (ironCount >= 10 && copperCount >= 10)
+        {
+            // Производство Dural
+            int duralToProduce = Math.Min(ironCount, copperCount); // Выбираем минимальное количество из ironCount и copperCount
+            _resfactory.GenerateResources(resources.Count);
+            StartCoroutine(WaitProduce());
+        }
+    }
+    private IEnumerator WaitProduce()
+    {
+        yield return new WaitForSeconds(1f);
+        Clear();
     }
     public void AddResource(ResourceData data) => resources.Add(data);
   
