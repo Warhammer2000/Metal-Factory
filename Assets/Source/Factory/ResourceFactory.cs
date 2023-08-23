@@ -5,7 +5,7 @@ public class ResourceFactory : MonoBehaviour
     [SerializeField] private GameObject resourcePrefab;
     [SerializeField] private Transform parentObject;
     [SerializeField] private Transform[] spawnPlatform; 
-    public float generationInterval = 0.5f; 
+    public float generationInterval = 5f; 
     private int maxResourcesOnPlatform = 10000;
 
     private float timer = 0f;

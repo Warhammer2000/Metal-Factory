@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
@@ -17,7 +18,10 @@ public class Inventory : MonoBehaviour
     {
         resources = new List<ResourceData>(32);
     }
-
+    private void FixedUpdate()
+    {
+        ResourcesTypeContructor();
+    }
     public void AddResource(ResourceData data)
     {
         resources.Add(data);
@@ -41,49 +45,24 @@ public class Inventory : MonoBehaviour
     }
     public void RemoveResource(ResourceData data) => resources.Remove(data);
     public void Clear() => resources.Clear();
+
+    private void ResourcesTypeContructor()
+    {
+        Dictionary<ResourceType, int> resourceCounts = new Dictionary<ResourceType, int>();
+        for (int i = 0; i < resources.Count; i++)
+        {
+            ResourceType type = resources[i].Type;
+            if (!resourceCounts.ContainsKey(type))
+            {
+                resourceCounts[type] = 0;
+            }
+
+            resourceCounts[type]++;
+        }
+        foreach(KeyValuePair<ResourceType, int> kvp in resourceCounts)
+        {
+            Debug.Log($"Key: {kvp.Key}, Value: {kvp.Value}");
+        }
+    }
 }
-//public void CheckItems()
-//{
-//    if (resources.Count >= 10)
-//    {
-//        if (_factory.isDuralFactory == true)
-//        {
-//            if (CheckingResources())
-//            {
-//                Debug.Log("Uspex");
-//                Dictionary<ResourceType, int> resourceCounts = new Dictionary<ResourceType, int>();
-//                for (int i = 0; i < resources.Count; i++)
-//                {
-//                    ResourceType type = resources[i].Type;
-//                    if (!resourceCounts.ContainsKey(type))
-//                    {
-//                        resourceCounts[type] = 0;
-//                    }
-//                    Debug.Log("Uspex0");
-//                    resourceCounts[type]++;
-//                }
-//                bool hasIron = resourceCounts.ContainsKey(ResourceType.Iron);
-//                bool hasCopper = resourceCounts.ContainsKey(ResourceType.Copper);
-//                if (hasIron && hasCopper)
-//                {
-//                    _resfactory.GenerateResources(resources.Count);
-//                }
-
-
-
-//            }
-//            else Debug.Log("ne Uspex");
-//        }
-//        else _resfactory.GenerateResources(resources.Count);
-//    }
-//}
-//private bool CheckingResources()
-//{
-//    for(int i = 0; i < resources.Count; i++)
-//    {
-//        if (resources[i].Type == ResourceType.Iron && resources[i].Type == ResourceType.Copper)
-//        Debug.Log(resources[i].Type == ResourceType.Iron && resources[i].Type == ResourceType.Copper);
-//        return true;
-//    }
-//    return false;
-//}
+ 
