@@ -1,0 +1,300 @@
+fileFormatVersion: 2
+guid: 30c3d711146957641be0654048f8591e
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: 001
+    100002: 01
+    100004: 01_2
+    100006: 02
+    100008: //RootNode
+    100010: Door_01
+    100012: Door_02
+    100014: Metal_Frame_10M
+    100016: Metal_Frame_15M
+    100018: Metal_Frame_5M
+    100020: Metal_Roof
+    100022: Pillar_01
+    100024: Pillar_02
+    100026: Slab_Floor_10M
+    100028: Slab_Floor_5M
+    100030: Vent_Aeration
+    100032: Vent_Down
+    100034: Vent_Down_Turn
+    100036: Vent_Straigh
+    100038: Vent_Turn
+    100040: Wall_5M
+    100042: Wall_Corner_IN_5M
+    100044: Wall_Corner_OUT_5M
+    100046: Wall_Door_1M
+    100048: Wall_Door_5M
+    100050: Wall_UP_5M
+    100052: Wall_UP_Corner_IN_5M
+    100054: Wall_UP_Window_5M
+    100056: Wall_Window_5M
+    400000: 001
+    400002: 01
+    400004: 01_2
+    400006: 02
+    400008: //RootNode
+    400010: Door_01
+    400012: Door_02
+    400014: Metal_Frame_10M
+    400016: Metal_Frame_15M
+    400018: Metal_Frame_5M
+    400020: Metal_Roof
+    400022: Pillar_01
+    400024: Pillar_02
+    400026: Slab_Floor_10M
+    400028: Slab_Floor_5M
+    400030: Vent_Aeration
+    400032: Vent_Down
+    400034: Vent_Down_Turn
+    400036: Vent_Straigh
+    400038: Vent_Turn
+    400040: Wall_5M
+    400042: Wall_Corner_IN_5M
+    400044: Wall_Corner_OUT_5M
+    400046: Wall_Door_1M
+    400048: Wall_Door_5M
+    400050: Wall_UP_5M
+    400052: Wall_UP_Corner_IN_5M
+    400054: Wall_UP_Window_5M
+    400056: Wall_Window_5M
+    2100000: MAT_Metal_Roof
+    2100002: MAT_Frames
+    2100004: MAT_Vent
+    2100006: MAT_Wall_01
+    2100008: MAT_Floor
+    2100010: MAT_Door_02
+    2100012: MAT_Door_01
+    2300000: 001
+    2300002: 01
+    2300004: 01_2
+    2300006: 02
+    2300008: Door_01
+    2300010: Door_02
+    2300012: Metal_Frame_10M
+    2300014: Metal_Frame_15M
+    2300016: Metal_Frame_5M
+    2300018: Metal_Roof
+    2300020: Pillar_01
+    2300022: Pillar_02
+    2300024: Slab_Floor_10M
+    2300026: Slab_Floor_5M
+    2300028: Vent_Aeration
+    2300030: Vent_Down
+    2300032: Vent_Down_Turn
+    2300034: Vent_Straigh
+    2300036: Vent_Turn
+    2300038: Wall_5M
+    2300040: Wall_Corner_IN_5M
+    2300042: Wall_Corner_OUT_5M
+    2300044: Wall_Door_1M
+    2300046: Wall_Door_5M
+    2300048: Wall_UP_5M
+    2300050: Wall_UP_Corner_IN_5M
+    2300052: Wall_UP_Window_5M
+    2300054: Wall_Window_5M
+    3300000: 001
+    3300002: 01
+    3300004: 01_2
+    3300006: 02
+    3300008: Door_01
+    3300010: Door_02
+    3300012: Metal_Frame_10M
+    3300014: Metal_Frame_15M
+    3300016: Metal_Frame_5M
+    3300018: Metal_Roof
+    3300020: Pillar_01
+    3300022: Pillar_02
+    3300024: Slab_Floor_10M
+    3300026: Slab_Floor_5M
+    3300028: Vent_Aeration
+    3300030: Vent_Down
+    3300032: Vent_Down_Turn
+    3300034: Vent_Straigh
+    3300036: Vent_Turn
+    3300038: Wall_5M
+    3300040: Wall_Corner_IN_5M
+    3300042: Wall_Corner_OUT_5M
+    3300044: Wall_Door_1M
+    3300046: Wall_Door_5M
+    3300048: Wall_UP_5M
+    3300050: Wall_UP_Corner_IN_5M
+    3300052: Wall_UP_Window_5M
+    3300054: Wall_Window_5M
+    4300000: Metal_Roof
+    4300002: Metal_Frame_15M
+    4300004: Metal_Frame_10M
+    4300006: Metal_Frame_5M
+    4300008: Vent_Aeration
+    4300010: Vent_Down_Turn
+    4300012: Vent_Down
+    4300014: Vent_Turn
+    4300016: Vent_Straigh
+    4300018: Wall_UP_Window_5M
+    4300020: Wall_UP_Corner_IN_5M
+    4300022: Wall_UP_5M
+    4300024: Wall_Window_5M
+    4300026: Wall_Corner_OUT_5M
+    4300028: Wall_Door_1M
+    4300030: Wall_Door_5M
+    4300032: Wall_Corner_IN_5M
+    4300034: Wall_5M
+    4300036: Pillar_02
+    4300038: Pillar_01
+    4300040: Slab_Floor_5M
+    4300042: Slab_Floor_10M
+    4300044: Door_02
+    4300046: 01
+    4300048: Door_01
+    4300050: 02
+    4300052: 01_2
+    4300054: 001
+    6400000: 001
+    6400002: 01
+    6400004: 01_2
+    6400006: 02
+    6400008: Door_01
+    6400010: Door_02
+    6400012: Metal_Frame_10M
+    6400014: Metal_Frame_15M
+    6400016: Metal_Frame_5M
+    6400018: Metal_Roof
+    6400020: Pillar_01
+    6400022: Pillar_02
+    6400024: Slab_Floor_10M
+    6400026: Slab_Floor_5M
+    6400028: Vent_Aeration
+    6400030: Vent_Down
+    6400032: Vent_Down_Turn
+    6400034: Vent_Straigh
+    6400036: Vent_Turn
+    6400038: Wall_5M
+    6400040: Wall_Corner_IN_5M
+    6400042: Wall_Corner_OUT_5M
+    6400044: Wall_Door_1M
+    6400046: Wall_Door_5M
+    6400048: Wall_UP_5M
+    6400050: Wall_UP_Corner_IN_5M
+    6400052: Wall_UP_Window_5M
+    6400054: Wall_Window_5M
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Door_01
+    second: {fileID: 2100000, guid: d233bac5bb17a7d43ac053178afb780a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Door_02
+    second: {fileID: 2100000, guid: 840b6b1537746e04698bf1dfbe1f75e0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Floor
+    second: {fileID: 2100000, guid: e5259cb19f21daf468a41e868f2a52e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Frames
+    second: {fileID: 2100000, guid: 2d56035e22dad9142925917044d7b0c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Metal_Roof
+    second: {fileID: 2100000, guid: 1de4adfe4ae4a1b4db59a2d27e6461df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Vent
+    second: {fileID: 2100000, guid: d774dab191256ca49b581cecc49648ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Wall_01
+    second: {fileID: 2100000, guid: a8dbb58bc39b7a94f8ad15caf9e94553, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 1
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 0
+    normalImportMode: 1
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

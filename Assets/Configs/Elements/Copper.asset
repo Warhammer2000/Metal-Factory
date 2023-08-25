@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Copper
   m_EditorClassIdentifier: 
   Type: 0
-  <Amount>k__BackingField: 1
+  Amount: 1

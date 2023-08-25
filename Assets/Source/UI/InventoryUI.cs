@@ -1,10 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http.Headers;
 using UnityEngine;
 using UnityEngine.UI;
-using Zenject.SpaceFighter;
+
 
 [RequireComponent(typeof(Inventory))]
 public class InventoryUI : MonoBehaviour
@@ -59,6 +55,6 @@ public class InventoryUI : MonoBehaviour
         NeedIron.text = $"Железа : {ironCount} / {ironCount}";
         NeedCoprum.text = $"Меди :{CopperCount} / {CopperCount}";
         NeedDural.text = $"Алюминия :{DuralCount} / {DuralCount}";
-
-    }
+        Debug.Log("Bltn")
+;    }
 }

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Dural
   m_EditorClassIdentifier: 
   Type: 2
-  <Amount>k__BackingField: 1
+  Amount: 1

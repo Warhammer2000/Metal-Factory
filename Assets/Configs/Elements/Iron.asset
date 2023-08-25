@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Iron
   m_EditorClassIdentifier: 
   Type: 1
-  <Amount>k__BackingField: 1
+  Amount: 1

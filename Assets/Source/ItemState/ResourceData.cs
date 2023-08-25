@@ -7,5 +7,5 @@ using UnityEngine;
 public class ResourceData : ScriptableObject
 {
     public ResourceType Type;
-    public int Amount;
+    public int Amount = 1;
 }
