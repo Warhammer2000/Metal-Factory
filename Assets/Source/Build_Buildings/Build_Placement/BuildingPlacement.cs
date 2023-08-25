@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class BuildingPlacement : MonoBehaviour
 {
+   
+
     public GameObject buildingPrefab; 
     public GameObject projectionPrefab; 
 
@@ -10,20 +12,22 @@ public class BuildingPlacement : MonoBehaviour
 
     private BuildingBrain _brain;
 
-    private bool isPlacing = false;
+    [SerializeField] private bool isBuildButtonPushed = false;
+    [SerializeField] private bool isPlacing = false;
     private bool isCanseled = false;
 
     private Camera mainCamera;
-
+   
     private void Start()
     {
+        
         mainCamera = Camera.main;
         _brain = GetComponent<BuildingBrain>();
     }
 
     private void Update()
     {
-        if (isPlacing)
+        if (isBuildButtonPushed)
         {
             Vector3 mousePosition = Input.mousePosition;
             mousePosition.z = mainCamera.transform.position.y - transform.position.y;
@@ -33,24 +37,41 @@ public class BuildingPlacement : MonoBehaviour
                 currentBuilding.transform.position = new Vector3(worldPosition.x, transform.position.y, worldPosition.z);
 
             ProjectionDisplay();
-
-            if (Input.GetMouseButtonDown(0))
+            if (isPlacing)
             {
-                Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
-                RaycastHit hit;
-
-                if (Physics.Raycast(ray, out hit))
+                if (Input.GetMouseButtonDown(0))
                 {
-                    if (_brain.CanBuildBuilding(_brain.buildingPrices))
+                    Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+                    RaycastHit hit;
+
+                    if (Physics.Raycast(ray, out hit))
                     {
-                        Instantiate(buildingPrefab, hit.point, Quaternion.identity);
+                        Debug.Log(hit.collider.gameObject.tag);
+                        if(hit.collider.CompareTag("Wall"))
+                        {
+                            Debug.Log("NS XJHN");
+                            return;
+                        }
+                        else
+                        {
+                            if (_brain.CanBuildBuilding(_brain.buildingPrices))
+                            {
+                                Instantiate(buildingPrefab, hit.point, Quaternion.identity);
+                                Debug.LogWarning("ТЫ построил башню");
+                            }
+                            else
+                            {
+                                Debug.LogWarning("Ты не можешь купить здание ");
+                            }
+                        }
+                       
                     }
                 }
             }
             if(Input.GetKeyDown(KeyCode.Escape))
             {
+                isBuildButtonPushed = false;
                 isPlacing = false;
-                isCanseled = true;
                 StopPlacing();
             }
         }
@@ -64,7 +85,6 @@ public class BuildingPlacement : MonoBehaviour
             if(Physics.Raycast(ray, out hit))
             {
                 Vector3 projectionPosition = hit.point;
-                //projectionPosition.y = 0.01f; 
                 currentProjection.transform.position = projectionPosition;
             }
             Material projectionMaterial = currentProjection.GetComponent<Renderer>().material;
@@ -75,9 +95,9 @@ public class BuildingPlacement : MonoBehaviour
     }
     public void StartPlacing()
     {
-        isPlacing = true;
+        isBuildButtonPushed = true;
         currentProjection = Instantiate(projectionPrefab);
-        
+        isPlacing = true;
     }
 
     public void StopPlacing()

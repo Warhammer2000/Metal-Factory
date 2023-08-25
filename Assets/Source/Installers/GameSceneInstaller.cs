@@ -6,12 +6,16 @@ namespace Project.Installer
 {
     public class GameSceneInstaller : MonoInstaller
     {
-        [SerializeField] private MovementSettings _movementsettings;
-        [SerializeField] private GameObject Factory—himney;
+        [SerializeField] private MovementSettings _movementSettings;
+        [SerializeField] private Inventory _inventory;
+        [SerializeField] private GameObject _factory—himney;
+        [SerializeField] private ResourceCount _count;
         public override void InstallBindings()
         {
-            Container.Bind<MovementSettings>().FromInstance(_movementsettings).AsSingle();
-            Container.Bind<GameObject>().FromInstance(Factory—himney).AsSingle();
+            Container.Bind<ResourceCount>().FromInstance(_count).AsSingle();
+            Container.Bind<MovementSettings>().FromInstance(_movementSettings).AsSingle();
+            Container.Bind<Inventory>().FromInstance(_inventory).AsSingle();
+            Container.Bind<GameObject>().FromInstance(_factory—himney).AsSingle();
         }
     }
 }

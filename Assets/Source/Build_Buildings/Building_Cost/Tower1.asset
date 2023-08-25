@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Tower1
   m_EditorClassIdentifier: 
   data:
-  - buildingType: 1
+  - buildingType: 0
     resourceType: 0
     amount: 11
