@@ -9,11 +9,13 @@ namespace Industry
     {
         [field: SerializeField] public float moveSpeed { get; private set; }
         [field: SerializeField] public float accelerationSpeed { get; private set; }
+        [field: SerializeField] public float rotationSpeed { get; private set; }
 
         private void OnValidate()
         {
             if (moveSpeed < 0) moveSpeed = 0;
             if (accelerationSpeed < 0) moveSpeed = 0;
+            if (rotationSpeed < 0) moveSpeed = 0;
         }
     }
 }

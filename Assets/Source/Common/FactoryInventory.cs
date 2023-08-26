@@ -60,12 +60,14 @@ public class FactoryInventory : MonoBehaviour
     }
     private bool CheckingResources()
     {
+#pragma warning disable CS0162 // Обнаружен недостижимый код
         for (int i = 0; i < resources.Count; i++)
         {
             if (resources[i].Type == ResourceType.Iron && resources[i].Type == ResourceType.Copper)
             Debug.Log(resources[i].Type == ResourceType.Iron && resources[i].Type == ResourceType.Copper);
             return true;
         }
+#pragma warning restore CS0162 // Обнаружен недостижимый код
         return false;
     }
     private void ProduceDural(Factory factory)

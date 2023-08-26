@@ -57,35 +57,3 @@ public class BuildingBrain : MonoBehaviour
 
 
 }
-//for (int i = 0; i < _inventory.resources.Count; i++)
-//{
-//    if (_inventory.resources[i].Type == ResourceType.Copper)
-//    {
-//        CountIterration++;
-//    }
-//}
-//if (_inventory.resources.Count == 0)
-//{
-//    Debug.Log("У тебя инвентарь пустой лох");
-//    return false;
-//}
-
-//private bool CheckResourceAvailability(ResourceType resourceType, int requiredAmount, BuildingType type)
-//{
-//    if (type == BuildingType.GoldFactorty)
-//    {
-//        if (resourceType == ResourceType.Copper && _resourceCount.CopperCount >= requiredAmount)
-//        {
-//            for (int i = 0; i < _inventory.resources.Count; i++)
-//            {
-//                if (_inventory.resources[i].Type == ResourceType.Copper)
-//                {
-//                    _inventory.resources.RemoveRange(0, requiredAmount);
-//                }
-//            }
-//            return true;
-//        }
-
-//    }
-//    return false;
-//}

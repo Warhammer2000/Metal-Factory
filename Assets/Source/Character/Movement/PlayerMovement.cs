@@ -15,7 +15,7 @@ namespace Industry
         private void Construct(MovementSettings settings)
         {
             _settings = settings;
-            Debug.Log($"Instalation of {settings} are successed");
+            Debug.Log($"Installation of {settings} is successful");
         }
 
         private void Start()
@@ -32,8 +32,23 @@ namespace Industry
 
             Vector3 movementInput = new Vector3(horizontalInput, 0f, verticalInput);
 
-            Vector3 velocityVector = movementInput * moveSpeed * Time.deltaTime;
+            Vector3 rotatedMovement = Quaternion.Euler(0f, transform.eulerAngles.y, 0f) * movementInput;
+
+            Vector3 velocityVector = rotatedMovement * moveSpeed * Time.deltaTime;
             _characterController.Move(velocityVector);
+
+            // Добавляем повороты по горизонтали
+            float rotationInput = 0f;
+            if (Input.GetKey(KeyCode.E))
+            {
+                rotationInput = 1f; // Поворачиваем вправо при нажатии E
+            }
+            else if (Input.GetKey(KeyCode.Q))
+            {
+                rotationInput = -1f; // Поворачиваем влево при нажатии Q
+            }
+
+            transform.Rotate(Vector3.up * rotationInput * _settings.rotationSpeed * Time.deltaTime);
         }
     }
 }
