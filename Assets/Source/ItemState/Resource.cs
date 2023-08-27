@@ -18,7 +18,7 @@ public class Resource : MonoBehaviour
     [field : SerializeField] public bool isIron { get; set; }
     private void Awake()
     {
-        Destroy(gameObject, 8f);
+       // Destroy(gameObject, 8f);
     }
     public ResourceData Data => data;
 
