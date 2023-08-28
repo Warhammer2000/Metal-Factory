@@ -39,40 +39,83 @@ public class BuildingPlacement : MonoBehaviour
             ProjectionDisplay();
             if (isPlacing)
             {
-                if (Input.GetMouseButtonDown(0))
+                if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
                 {
-                    Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
-                    RaycastHit hit;
-
-                    if (Physics.Raycast(ray, out hit))
-                    {
-                        Debug.Log(hit.collider.gameObject.tag);
-                        if(hit.collider.CompareTag("Wall"))
-                        {
-                            Debug.Log("NS XJHN");
-                            return;
-                        }
-                        else
-                        {
-                            if (_brain.CanBuildBuilding(_brain.buildingPrices))
-                            {
-                                Instantiate(buildingPrefab, hit.point, Quaternion.identity);
-                                Debug.LogWarning("ТЫ построил башню");
-                            }
-                            else
-                            {
-                                Debug.LogWarning("Ты не можешь купить здание ");
-                            }
-                        }
-                       
-                    }
+                    ANROID_IOSBUILDING();
                 }
+                else PCBUILDING();
             }
             if(Input.GetKeyDown(KeyCode.Escape))
             {
                 isBuildButtonPushed = false;
                 isPlacing = false;
                 StopPlacing();
+            }
+        }
+    }
+    private void ANROID_IOSBUILDING()
+    {
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+
+            if (touch.phase == TouchPhase.Began)
+            {
+                Ray ray = mainCamera.ScreenPointToRay(touch.position);
+                RaycastHit hit;
+
+                if (Physics.Raycast(ray, out hit))
+                {
+                    Debug.Log(hit.collider.gameObject.tag);
+                    if (hit.collider.CompareTag("Wall"))
+                    {
+                        Debug.Log("NS XJHN");
+                        return;
+                    }
+                    else
+                    {
+                        if (_brain.CanBuildBuilding(_brain.buildingPrices))
+                        {
+                            Instantiate(buildingPrefab, hit.point, Quaternion.identity);
+                            Debug.LogWarning("Ты построил башню");
+                        }
+                        else
+                        {
+                            Debug.LogWarning("Ты не можешь купить здание");
+                        }
+                    }
+                }
+            }
+        }
+    }
+    private void PCBUILDING()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit))
+            {
+                Debug.Log(hit.collider.gameObject.tag);
+                if (hit.collider.CompareTag("Wall"))
+                {
+                    Debug.Log("NS XJHN");
+                    return;
+                }
+                else
+                {
+                    if (_brain.CanBuildBuilding(_brain.buildingPrices))
+                    {
+                        Instantiate(buildingPrefab, hit.point, Quaternion.identity);
+                        Debug.LogWarning("ТЫ построил башню");
+                    }
+                    else
+                    {
+                        Debug.LogWarning("Ты не можешь купить здание ");
+                    }
+                }
+
             }
         }
     }
