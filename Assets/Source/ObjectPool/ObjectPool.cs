@@ -6,12 +6,11 @@ using UnityEngine.Pool;
 
 public class ObjectPool : MonoBehaviour
 {
-    
-    public GameObject prefab;           // Префаб объекта для пула
-    public int poolSize = 5;           // Размер пула
+
+    public GameObject prefab;      
+    public int poolSize = 5;        
     [SerializeField] private Transform[] spawnPoints;
     [SerializeField] private List<GameObject> poolObject = new List<GameObject>();
-    private bool isPoolActive =  true ;
     [SerializeField] private Transform parentTransform;
     private void Awake()
     {
@@ -29,9 +28,6 @@ public class ObjectPool : MonoBehaviour
             Debug.LogError("Spawn platform array is empty!");
             return;
         }
-
-        
-
         for (int i = 0; i < poolSize; i++)
         {
             int randomIndex = Random.Range(0, spawnPoints.Length);
@@ -52,15 +48,13 @@ public class ObjectPool : MonoBehaviour
                 return obj;
             }
         }
-
-        // Если пул пуст, можно реализовать логику создания нового объекта при необходимости
         Debug.LogWarning("Pull пустой");
-        return null; // Возвращаем null, если пул пуст
+        return null; 
     }
 
     private IEnumerator DeactivateAndReactivatePool(GameObject obj)
     { 
-        // Ожидание         parentTransform = spawnPoints;6 секунд
+       
         yield return new WaitForSeconds(6.0f);
 
         for(int i = 0; i < parentTransform.childCount; i++)
@@ -69,7 +63,7 @@ public class ObjectPool : MonoBehaviour
             child.gameObject.SetActive(true);
         }
         Debug.Log("Child are active");
-        yield return new WaitForSeconds(1.0f); // Дополнительная пауза
+        yield return new WaitForSeconds(1.0f); 
     }
 
 }

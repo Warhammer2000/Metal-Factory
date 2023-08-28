@@ -11,6 +11,7 @@ namespace Project.Installer
         [SerializeField] private GameObject _factory—himney;
         [SerializeField] private ResourceCount _count;
         [SerializeField] private ObjectPool _pool;
+
         public override void InstallBindings()
         {
             Container.Bind<ResourceCount>().FromInstance(_count).AsSingle();
