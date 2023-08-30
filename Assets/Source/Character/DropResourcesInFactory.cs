@@ -6,8 +6,9 @@ using UnityEngine;
 [RequireComponent(typeof(Inventory))]
 public class DropResourcesInFactory : MonoBehaviour
 {
+    [SerializeField] private Factory currentFactory;
     private Inventory inventory;
-
+    [SerializeField]private bool inTrigger = false;
     private void Awake()
     {
         inventory = GetComponent<Inventory>();
@@ -16,29 +17,66 @@ public class DropResourcesInFactory : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         var factory = other.GetComponentInParent<Factory>();
-
-        if (Input.GetKey(KeyCode.R))
+        currentFactory = factory;
+        if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
         {
-            if (factory != null)
+            Debug.Log("Anroid");
+            
+            inTrigger = true;   
+        }
+        else
+        {
+            if (Input.GetKey(KeyCode.R))
             {
-                if (factory.isCopperFactory == true && ChekingResourcesType())
+                if (factory != null)
                 {
-                         foreach (var resource in inventory.Resources)
-                        {
-                            factory.Inventory.AddResource(resource);
-                        }
-                        inventory.Clear();
-                }
-                if (factory.isDuralFactory)
-                {
+                    if (factory.isCopperFactory == true && ChekingResourcesType())
+                    {
                         foreach (var resource in inventory.Resources)
                         {
                             factory.Inventory.AddResource(resource);
                         }
                         inventory.Clear();
+                    }
+                    if (factory.isDuralFactory)
+                    {
+                        foreach (var resource in inventory.Resources)
+                        {
+                            factory.Inventory.AddResource(resource);
+                        }
+                        inventory.Clear();
+                    }
                 }
             }
-        } 
+        }
+    }
+    public void DropResources()
+    {
+        if (currentFactory == null) Debug.Log("U are not in Factory Trigger"); 
+        if (currentFactory != null)
+        {
+            if (currentFactory.isCopperFactory == true && ChekingResourcesType())
+            {
+                foreach (var resource in inventory.Resources)
+                {
+                    currentFactory.Inventory.AddResource(resource);
+                }
+                inventory.Clear();
+            }
+            if (currentFactory.isDuralFactory)
+            {
+                foreach (var resource in inventory.Resources)
+                {
+                    currentFactory.Inventory.AddResource(resource);
+                }
+                inventory.Clear();
+            }
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        inTrigger = false;
+        currentFactory = null;  
     }
     private bool ChekingResourcesType()
     {

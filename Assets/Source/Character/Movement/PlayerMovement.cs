@@ -29,14 +29,15 @@ namespace Industry
 
         private void Update()
         {
-            if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
-            {
-                Android_IOSMovement();
-            }
-            else
-            {
-                PCMovement();
-            }
+            PCMovement();
+            //if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
+            //{
+            //    Android_IOSMovement();
+            //}
+            //else
+            //{
+            //    PCMovement();
+            //}
         }
         private void Android_IOSMovement()
         {
