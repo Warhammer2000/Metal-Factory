@@ -1,0 +1,1005 @@
+fileFormatVersion: 2
+guid: 70d34fa98b7c6914a86a3e466d7ff27a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MetalFactoryUI_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6426
+        width: 1920
+        height: 1082
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c264e1dc4cbf094eb38d0c94ca7a8be
+      internalID: -1178981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_1
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 6123
+        width: 908
+        height: 274
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77c0f29a636161b459002d4383bd27e3
+      internalID: -1272703196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_2
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 6204
+        width: 640
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6d0a140218ffb4984852bc86a3ff43
+      internalID: 1281167989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_3
+      rect:
+        serializedVersion: 2
+        x: 1653
+        y: 6153
+        width: 247
+        height: 253
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aa1a1a0446ca1c4e8e18a2fa229eb4b
+      internalID: -419662698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_4
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 5830
+        width: 711
+        height: 274
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809bbaecd66a68042a2f3768aba66ab8
+      internalID: -1740049603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_5
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 5830
+        width: 262
+        height: 262
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae4c3f8ab07375d41aeb3970a499af79
+      internalID: 1864459054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_6
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 5964
+        width: 194
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 860ff6556815d3e4084ddf2def594af6
+      internalID: -409994880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_7
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 5962
+        width: 192
+        height: 191
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c3d2633c291dca4690e1dba8538c4e5
+      internalID: 621669771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_8
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 5962
+        width: 194
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 823c902502c40fb4eaaf1e6102598e4f
+      internalID: 1838695246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_9
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 5955
+        width: 192
+        height: 191
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d902fab95f68b31429db7e071c9f58d7
+      internalID: -409223433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_10
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 5532
+        width: 908
+        height: 274
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1536e2820bbc85049b8bb272c5ba6a10
+      internalID: -2092402964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_11
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 5582
+        width: 353
+        height: 367
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b7bbd4b514fe294ea866ba8e8ab8107
+      internalID: 306932284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_12
+      rect:
+        serializedVersion: 2
+        x: 1413
+        y: 5683
+        width: 265
+        height: 264
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c67fe36c6230c9641a829e259eebf5dd
+      internalID: -1336847874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_13
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 5716
+        width: 194
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62e8ea99c4874bb4fa1120bdfc7ab5ea
+      internalID: -219343138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_14
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 5291
+        width: 290
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fac98c16255b8643820ab244b01d802
+      internalID: -2050170667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_15
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 5269
+        width: 279
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3076cd7889168184287648bfbda34002
+      internalID: -784518874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_16
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 5267
+        width: 277
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 237cf83ee7142fc43bc484fee921a10d
+      internalID: -1045059851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_17
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 5365
+        width: 641
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3455a3ab170fc254c957075624543475
+      internalID: 1690493272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_18
+      rect:
+        serializedVersion: 2
+        x: 1658
+        y: 5448
+        width: 193
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd80dc0683a07e14b9c8026da025e38b
+      internalID: 1656175082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_19
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 4988
+        width: 355
+        height: 278
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d23fa0ef1f73254fa61a3d53120a917
+      internalID: -2119872925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_20
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 5013
+        width: 838
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a7fdf7a787ec64f8a7c89db26ba89a
+      internalID: 1347251529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_21
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 5111
+        width: 208
+        height: 207
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f923fcfc2a17b044da33fcb45a75ff12
+      internalID: 1661578421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_22
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 5028
+        width: 308
+        height: 317
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38be360f2a5e4c143b397f12791033c8
+      internalID: 299565277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_23
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 3961
+        width: 1746
+        height: 998
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb67a949932785a458208ec40fc6f625
+      internalID: 952784212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_24
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 3730
+        width: 838
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e302c00c8747e5439ffb46d20a1b990
+      internalID: -978358901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_25
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 3159
+        width: 676
+        height: 781
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd87a2277fbf44d478ea1919c0c9c51c
+      internalID: -1632618565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_26
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 2967
+        width: 722
+        height: 694
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7087ebdde7e984646ab8ae8cca452664
+      internalID: -1838400841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_27
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 2959
+        width: 149
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04aa544244fe8044cbd4f0abd86644e3
+      internalID: -1545808539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_28
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 2901
+        width: 242
+        height: 247
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5661ef9e755978f4eae16988e104be92
+      internalID: 1992878222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_29
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 2922
+        width: 171
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d7ac91f48d59b443b846c7a367aec7f
+      internalID: -126023911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_30
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1849
+        width: 1794
+        height: 1027
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add5d6c7189b12c43b89d3e096ff69c5
+      internalID: -121985763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_31
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 1707
+        width: 1535
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce0ab56cd9157f04f857c5883c196c2a
+      internalID: 146258105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_32
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1593
+        width: 1457
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04859177c6511fd41a5c8e84f8446d6d
+      internalID: -589651210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_33
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1497
+        width: 1572
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9723a16a91f8e1248a4d3bcf1fb1032f
+      internalID: -554062043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_34
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 91
+        width: 991
+        height: 1283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af1a95604288ea42887c29c9c3d87fb
+      internalID: 1800280518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_35
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 1119
+        width: 651
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b7a7c4b31642ad4483ffb8534532b32
+      internalID: 1582011968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_36
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 1005
+        width: 128
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcb7ce81309514c43af595f0bdd5a587
+      internalID: 873099176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_37
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 1156
+        width: 563
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed0fd4b4d1bbdab4c82ee811f6a2d323
+      internalID: 591944600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MetalFactoryUI_38
+      rect:
+        serializedVersion: 2
+        x: 1614
+        y: 5138
+        width: 240
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7844e938401cde447bf22e184cb73320
+      internalID: -2050633136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e1d87ce8d128ff4ab021a8f31a3c2bb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      MetalFactoryUI_0: -1178981
+      MetalFactoryUI_1: -1272703196
+      MetalFactoryUI_10: -2092402964
+      MetalFactoryUI_11: 306932284
+      MetalFactoryUI_12: -1336847874
+      MetalFactoryUI_13: -219343138
+      MetalFactoryUI_14: -2050170667
+      MetalFactoryUI_15: -784518874
+      MetalFactoryUI_16: -1045059851
+      MetalFactoryUI_17: 1690493272
+      MetalFactoryUI_18: 1656175082
+      MetalFactoryUI_19: -2119872925
+      MetalFactoryUI_2: 1281167989
+      MetalFactoryUI_20: 1347251529
+      MetalFactoryUI_21: 1661578421
+      MetalFactoryUI_22: 299565277
+      MetalFactoryUI_23: 952784212
+      MetalFactoryUI_24: -978358901
+      MetalFactoryUI_25: -1632618565
+      MetalFactoryUI_26: -1838400841
+      MetalFactoryUI_27: -1545808539
+      MetalFactoryUI_28: 1992878222
+      MetalFactoryUI_29: -126023911
+      MetalFactoryUI_3: -419662698
+      MetalFactoryUI_30: -121985763
+      MetalFactoryUI_31: 146258105
+      MetalFactoryUI_32: -589651210
+      MetalFactoryUI_33: -554062043
+      MetalFactoryUI_34: 1800280518
+      MetalFactoryUI_35: 1582011968
+      MetalFactoryUI_36: 873099176
+      MetalFactoryUI_37: 591944600
+      MetalFactoryUI_38: -2050633136
+      MetalFactoryUI_4: -1740049603
+      MetalFactoryUI_5: 1864459054
+      MetalFactoryUI_6: -409994880
+      MetalFactoryUI_7: 621669771
+      MetalFactoryUI_8: 1838695246
+      MetalFactoryUI_9: -409223433
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
