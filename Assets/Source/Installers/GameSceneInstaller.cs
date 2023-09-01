@@ -12,9 +12,7 @@ namespace Project.Installer
         [SerializeField] private GameObject _factory—himney;
         [SerializeField] private ResourceCount _count;
         [SerializeField] private ObjectPool _pool;
-#if UNITY_ANDROID
         [SerializeField] private Joystick _joystick;
-#endif
 
         public override void InstallBindings()
         {
@@ -23,10 +21,7 @@ namespace Project.Installer
             Container.Bind<Inventory>().FromInstance(_inventory).AsSingle();
             Container.Bind<GameObject>().FromInstance(_factory—himney).AsSingle();
             Container.Bind<ObjectPool>().FromInstance(_pool).AsSingle();
-#if UNITY_ANDROID
            Container.Bind<Joystick>().FromInstance(_joystick).AsSingle();
-            Debug.Log("Android");
-#endif
         }
     }
 }
