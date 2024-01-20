@@ -18,11 +18,11 @@
 
 
 
-| Zenject            |     30% |
+| Zenject            |     32% |
 | :----------------- | ------: |
-| **Odin Inspector** | **20%** |
-| **Asset Bundle**   | **20%** |
-| **UniRx**          | **30%** |
+| **Odin Inspector** | **32%** |
+| **Asset Bundle**   | **22%** |
+| **UniRx**          | **10%** |
 
 
 
